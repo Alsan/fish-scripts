@@ -1,0 +1,8 @@
+alias state 'git status'
+alias log 'git log'
+alias push 'git push'
+alias pull 'git pull'
+alias commit 'git commit'
+alias flow 'git flow'
+alias add 'git add'
+alias add-all 'git add -A :/'

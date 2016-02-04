@@ -1,0 +1,5 @@
+cache/
+fishfile
+conf.d/autoenvstack.config.fish
+*.swp
+plugins/z.fish
