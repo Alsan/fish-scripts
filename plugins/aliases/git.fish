@@ -8,6 +8,8 @@ alias flow 'git flow'
 alias add 'git add'
 alias add-all 'git add -A :/'
 alias checkout 'git checkout'
+alias commit-amend 'git commit --amend --no-edit'
+alias commit-ammend-msg 'git commit --amend -m'
 
 function __is_inside_git_repo
 	git rev-parse 2> /dev/null
