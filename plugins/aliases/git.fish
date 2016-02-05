@@ -1,7 +1,7 @@
 alias init 'git init'
 alias remote 'git remote'
 alias state 'git status'
-alias log 'git log'
+alias log 'git log --oneline --graph --decorate'
 alias push 'git push'
 alias pull 'git pull'
 alias commit 'git commit -m'
@@ -34,7 +34,7 @@ function diff -d 'git diff if under git repo, or normal diff if outside git diff
 	__is_inside_git_repo
 
 	if [ $status -eq 0 ]
-		git diff --cached $argv
+		sh -c "git diff $argv"
 	else
 		command diff $argv
 	end
