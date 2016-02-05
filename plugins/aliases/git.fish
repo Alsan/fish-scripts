@@ -7,6 +7,7 @@ alias commit-all 'git commit -am'
 alias flow 'git flow'
 alias add 'git add'
 alias add-all 'git add -A :/'
+alias checkout 'git checkout'
 
 function __is_inside_git_repo
 	git rev-parse 2> /dev/null
