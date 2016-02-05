@@ -1,4 +1,4 @@
-function paring --description 'pairing logitech unifying receiver with mouse'
+function pairing --description 'pairing logitech unifying receiver with mouse'
 	sudo unify /dev/hidraw1
 
 	if [ $status -gt 0 ]
