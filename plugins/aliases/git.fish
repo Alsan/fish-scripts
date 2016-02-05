@@ -34,7 +34,7 @@ function diff -d 'git diff if under git repo, or normal diff if outside git diff
 	__is_inside_git_repo
 
 	if [ $status -eq 0 ]
-		git diff $argv
+		git diff --cached $argv
 	else
 		command diff $argv
 	end
