@@ -11,6 +11,8 @@ alias add-all 'git add -A :/'
 alias checkout 'git checkout'
 alias commit-amend 'git commit --amend --no-edit'
 alias commit-ammend-msg 'git commit --amend -m'
+alias branch 'git branch'
+
 alias flow 'git flow'
 alias flow-init 'git flow init -d'
 alias feature 'flow feature'
