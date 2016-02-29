@@ -12,6 +12,12 @@ alias checkout 'git checkout'
 alias commit-amend 'git commit --amend --no-edit'
 alias commit-ammend-msg 'git commit --amend -m'
 alias branch 'git branch'
+alias clean-preview 'git clean -f'
+alias clean 'git clean -f -n'
+alias clone 'git clone'
+alias remote 'git remote'
+alias reset 'git reset'
+alias tag 'git tag'
 
 alias flow 'git flow'
 alias flow-init 'git flow init -d'
@@ -41,3 +47,4 @@ function diff -d 'git diff if under git repo, or normal diff if outside git diff
 		command diff $argv
 	end
 end
+
