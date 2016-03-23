@@ -8,4 +8,5 @@ alias ll 'grc ls -lh'
 alias lld 'grc ls -ld */'
 alias lsd 'echo */ | fish_indent --ansi'
 alias l. 'ls -d .* --color=auto'
-
+alias find-file 'find . -type f -name'
+alias find-path 'find . -type d -name'
