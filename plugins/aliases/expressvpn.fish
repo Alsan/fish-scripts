@@ -1,0 +1,1 @@
+alias vpn "expressvpn"
