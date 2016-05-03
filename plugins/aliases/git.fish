@@ -4,22 +4,22 @@ alias state "git status"
 alias log "git log --oneline --graph --decorate"
 alias push "git push"
 alias pull "git pull"
-alias commit "git commit -m"
-alias commit-all "git commit -am"
 alias add "git add"
 alias add-all "git add -A :/"
+alias delete "git rm"
 alias checkout "git checkout"
-alias commit-amend "git commit --amend --no-edit"
+alias commit "git commit -m"
+alias commit-all "git commit -am"
+alias amend "git commit --amend --no-edit"
+alias amend-all "git commit -a --amend --no-edit"
 alias commit-ammend-msg "git commit --amend -m"
 alias branch "git branch"
 alias clean "git clean -fd"
 alias clean-preview "clean -n"
 alias clone "git clone"
-alias remote "git remote"
 alias reset "git reset"
 alias tag "git tag"
 alias version-tag "tag (date +%Y%m%d)"
-
 alias flow "git flow"
 alias flow-init "git flow init -d"
 alias feature "flow feature"
@@ -49,3 +49,23 @@ function diff -d "git diff if under git repo, or normal diff if outside git diff
 	end
 end
 
+function remove -d "remove specified file from git repo" --argument-names fn
+	if test -n $fn
+		delete --cached $fn
+		delete $f
+	else
+		echo "syntax: remove [filename.exe]"
+	end
+end
+
+function remove-all-ext -d "remove all files with extension from git repo" --argument-names ext
+	if test -n $ext
+		for f in (find . -name "*.$ext")
+			delete --cached $f
+			delete $f
+		end
+		echo "*.$ext" >> .gitignore
+	else
+		echo "syntax: remove [ext]"
+	end
+end
