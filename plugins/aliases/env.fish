@@ -10,5 +10,5 @@ alias lsd 'echo */ | fish_indent --ansi'
 alias l. 'ls -d .* --color=auto'
 alias find-file 'find . -type f -name'
 alias find-path 'find . -type d -name'
-alias groupby-ext "find . -type f | egrep -v 'git|svn' | sed 's/.*\.//' | sort | uniq -ci | sort -nrk1"
+alias list-ext "find . -type f | egrep -v 'git|svn' | sed 's/.*\.//' | sort | uniq -ci | sort -nrk1"
 alias ports-listening 'netstat -lntu'
