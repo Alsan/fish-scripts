@@ -12,3 +12,4 @@ alias find-file 'find . -type f -name'
 alias find-path 'find . -type d -name'
 alias list-ext "find . -type f | egrep -v 'git|svn' | sed 's/.*\.//' | sort | uniq -ci | sort -nrk1"
 alias ports-listening 'netstat -lntu'
+alias pypypip "sudo pypy -m pip"
