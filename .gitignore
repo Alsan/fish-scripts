@@ -1,5 +1,10 @@
 cache/
 fishfile
 conf.d/autoenvstack.config.fish
-*.swp
 plugins/z.fish
+docker-completion/
+getopts/
+gitignore/
+paths/
+spin/
+z/
