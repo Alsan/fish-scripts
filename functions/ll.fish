@@ -1,3 +1,3 @@
 function ll
-	ls-color $argV
+	ls-color $argv
 end
