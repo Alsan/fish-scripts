@@ -1,4 +1,3 @@
-alias wget 'wget -c'
-alias wget-rest 'wget -S -q --header "Accept: application/json" -O - '
-alias curl-rest 'curl -i -H "Accept: application/json"'
-alias aria2c 'aria2c -x 16'
+function wget --description 'alias wget wget -c'
+    command wget -c $argv
+end

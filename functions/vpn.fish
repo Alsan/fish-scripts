@@ -1,3 +1,3 @@
-function vpn
-	expressvpn $argv;
+function vpn -d 'alias vpn expressvpn'
+    expressvpn $argv
 end
