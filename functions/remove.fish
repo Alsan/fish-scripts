@@ -1,4 +1,4 @@
-function remove -d 'remove specified file from git repo' --argument fn
+function remove -d 'remove specified file from git repo' --argument-names fn
     if test -n $fn
         delete --cached $fn
         delete $f

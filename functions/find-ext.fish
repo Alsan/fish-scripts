@@ -1,4 +1,4 @@
-function find-ext --description 'find file with keyword by extension' --argument ext keyword grep_options
+function find-ext --description 'find file with keyword by extension' --argument-names ext keyword grep_options
     set opt_or $grep_options '-n'
 
     if test -n "$keyword"
