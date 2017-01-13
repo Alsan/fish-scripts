@@ -1,3 +1,3 @@
 function du
-    command du -sh $argv
+    command du -s $argv
 end
